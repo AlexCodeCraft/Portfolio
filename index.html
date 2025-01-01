@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alex - Portfolio Développeur Fullstack</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+</head>
+<body data-theme="light">
+    <header class="container">
+        <div class="logo">Alex</div>
+        <nav>
+            <ul>
+                <li><a href="#home">Accueil</a></li>
+                <li><a href="#projects">Projets</a></li>
+                <li><a href="#about">À propos</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <button id="theme-toggle" aria-label="Changer de thème">
+            <i class="fas fa-moon"></i>
+        </button>
+    </header>
+
+    <main class="container">
+        <section id="home">
+            <div id="hero">
+                <img id="hero-image" src="images/alex.jpeg" alt="Photo d'Alex Ouedraodrog">
+                <div id="hero-text">
+                    <h1>Alex</h1>
+                    <h2>Développeur Fullstack</h2>
+                    <p>Je suis un développeur Fullstack passionné par le développement web et les technologies émergentes. Actuellement étudiant en deuxième année de Bachelor à l'ESTIAM, j'ai une solide base en HTML, CSS, PHP, JavaScript, Python, MangoDB, et SQL. Je suis curieux, motivé, et toujours à la recherche de nouveaux défis pour développer mes compétences.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills">
+            <h2 class="section-title">Compétences Techniques</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <i class="fas fa-code"></i>
+                    <h3>Frontend</h3>
+                    <p>HTML, CSS, JavaScript, Angular</p>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-server"></i>
+                    <h3>Backend</h3>
+                    <p>PHP, Java, Python, C#, C++</p>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-database"></i>
+                    <h3>Base de données</h3>
+                    <p>MySQL, SQL Server, MongoDB</p>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-tools"></i>
+                    <h3>Outils</h3>
+                    <p>Git, GitHub, phpMyAdmin, VS Code, Postman, Swagger</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects">
+            <h2 class="section-title">Mes Projets</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <h3>Portfolio Personnel</h3>
+                    <p>Un site web pour présenter mes compétences et projets</p>
+                    <p><strong>Technologies :</strong> HTML, CSS, JavaScript</p>
+                    <a href="#" target="_blank">Code Source GitHub</a>
+                </div>
+                <div class="project-card">
+                    <h3>Application de Gestion de Contacts</h3>
+                    <p>Un système de gestion de contacts avec base de données</p>
+                    <p><strong>Technologies :</strong> PHP, MySQL</p>
+                    <a href="#" target="_blank">Code Source GitHub</a>
+                </div>
+                <div class="project-card">
+                    <h3>Projet de Stage – Application N-Tiers</h3>
+                    <p>Développement d'un portail d'administration avec une architecture n-tiers.</p>
+                    <p><strong>Technologies :</strong>SQL Server 2022, Angular, Swagger, TDD</p>
+                    <a href="#" target="_blank">Code Source GitHub</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="education">
+            <h2 class="section-title">Parcours Académique</h2>
+            <ul>
+                <li>Baccalauréat scientifique (Maths, Physique, SVT) - 2022</li>
+                <li>1ère année de Bachelor en Développement Web - Université Française d'Abidjan - 2022-2023</li>
+                <li>1ère année de Bachelor en Développement Web - ESTIAM (Cybersecurity, Systems & Networks, Apps) - 2023-2024</li>
+                <li>2ème année de Bachelor en Développement Web - ESTIAM (Cybersecurity, Systems & Networks, Apps) - 2024-2025</li>
+            </ul>
+        </section>
+
+        <section id="experience">
+            <h2 class="section-title">Expériences Professionnelles</h2>
+            
+            <h3>Fullstack Developer - BAM Engineering</h3>
+            <p>Juin 2024 - Juillet 2024, France</p>
+            <ul>
+                <li>Développement d’un portail d’administration en architecture N-tiers avec C# (backend) et Angular (frontend).</li>
+                <li>Utilisation des patterns Unit of Work et Repository.</li>
+                <li>Création et test des API REST documentées avec Swagger.</li>
+                <li>Tests dirigés par les données pour garantir la qualité.</li>
+                <li>Collaboration en méthodologie agile et utilisation de VS Code comme IDE principal.</li>
+            </ul>
+            
+            <h3>Technicien de surface - BAM Engineering</h3>
+            <p>CDD - Juillet - Août 2024 : Clinique vétérinaire, 43 Av. de la Jonchère, 78170 La Celle-Saint-Cloud</p>
+            <ul>
+                <li>Entretien des locaux pour assurer un environnement propre et hygiénique.</li>
+                <li>Application des protocoles de nettoyage spécifiques au secteur vétérinaire.</li>
+                <li>Gestion des produits de nettoyage et respect des normes de sécurité.</li>
+            </ul>
+        </section>
+
+        <section id="contact">
+            <h2 class="section-title">Contact</h2>
+            <form id="contact-form" action="https://hook.eu2.make.com/89pa5exx78zgtvgvq3rjrfnnbwjv1juu" method="POST">
+                <input type="text" name="name" placeholder="Votre nom" required>
+                <input type="email" name="email" placeholder="Votre email" required>
+                <input type="text" name="subject" placeholder="Sujet" required>
+                <textarea name="message" placeholder="Votre message" rows="5" required></textarea>
+                <button type="submit">Envoyer</button>
+            </form>
+        </section>
+        
+        
+
+            <div class="social-links">
+                <a href="https://github.com/AlexCodeCraft" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/issouf-alex-ouedraogo-1451bb2b3/" target="_blank"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Alex Ouedraogo. Tous droits réservés.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
